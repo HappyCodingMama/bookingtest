@@ -1,0 +1,46 @@
+.offersContainer {
+  width: 100%;
+  max-width: 1024px;
+
+  .offersItems {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1024px;
+    margin-top: 30px;
+
+    .itemLeft,
+    .itemRight {
+      position: relative;
+      width: 100%;
+      max-width: 1024px;
+
+      .offersImg {
+        img {
+          width: 100%;
+          height: 200px;
+          border-radius: 16px;
+          object-fit: cover;
+        }
+      }
+      .offersTexts {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        bottom: 0;
+        right: 0;
+        color: var(--color-white);
+
+        p {
+          margin-bottom: 30px;
+        }
+        button {
+          padding: 10px 14px;
+          background-color: var(--color-primary);
+          color: var(--color-white);
+          font-family: 'Roboto Slab', serif;
+        }
+      }
+    }
+  }
+}

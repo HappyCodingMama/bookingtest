@@ -1,0 +1,80 @@
+.inspirationContainer {
+  width: 100%;
+  max-width: 1024px;
+
+  .inspirationBox {
+    display: grid;
+    width: 100%;
+    max-width: 1024px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    .inspirationContent {
+      display: flex;
+
+      .inspirationImg {
+        flex: 1;
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+      .inspirationItems {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        height: 250px;
+        gap: 20px;
+        padding: 20px 18px;
+        background-color: var(--color-white);
+        .itemTitle {
+          margin-bottom: 10px;
+          h2 {
+            font-size: 17px;
+            margin-bottom: 20px;
+          }
+          h3 {
+            font-size: 17px;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+        .itemBox {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .itemDetails {
+            .detailText {
+              display: flex;
+
+              align-items: center;
+              margin-bottom: 6px;
+              .detailIcon {
+                font-size: 16px;
+                margin-right: 6px;
+              }
+              font-size: 14px;
+            }
+          }
+
+          .itemNext {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            width: 26px;
+            height: 26px;
+            padding: 2px;
+            font-size: 14px;
+
+            border: 2px solid var(--color-dark);
+          }
+        }
+      }
+    }
+  }
+}

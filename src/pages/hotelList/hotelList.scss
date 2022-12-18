@@ -1,0 +1,105 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .listBox {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    gap: 20px;
+
+    .listSearch {
+      flex: 1;
+      background-color: var(--color-white);
+      padding: 10px;
+      border-radius: 10px;
+      position: sticky;
+      top: 10px;
+      color: var(--color-black);
+      height: max-content;
+
+      .listBtn {
+        padding: 8px;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        width: 100%;
+        font-family: 'Roboto Slab', serif;
+      }
+
+      .listTitle {
+        font-size: 18px;
+        color: var(--color-black);
+        margin-bottom: 3px;
+      }
+      .listItem {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+        label {
+          font-size: 12px;
+          margin-top: 10px;
+          padding-top: 10px;
+          border-top: 1px solid var(--color-grey);
+        }
+        input {
+          font-family: 'Roboto Slab', serif;
+          height: 30px;
+          padding: 5px;
+        }
+        span {
+          height: 30px;
+          font-size: 14px;
+          padding: 5px;
+          background-color: var(--color-white);
+          color: var(--color-black);
+          display: flex;
+          align-items: center;
+        }
+        .listDate {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .dateIcon {
+            margin-right: 10px;
+            font-size: 13px;
+          }
+        }
+        .listOptions {
+          padding: 10px;
+          .listOptionItem {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: var(--color-black);
+            font-size: 12px;
+
+            .listOptionText {
+              background-color: transparent;
+              font-weight: 500;
+              color: var(--color-black);
+              small {
+                margin-left: 10px;
+              }
+            }
+            .listOptionInput {
+              width: 60px;
+              height: 30px;
+              padding: 7px;
+              font-family: 'Roboto Slab', serif;
+              cursor: pointer;
+              border: 1px solid var(--color-black);
+              color: var(--color-black);
+            }
+          }
+        }
+      }
+    }
+
+    .listResult {
+      flex: 3;
+    }
+  }
+}

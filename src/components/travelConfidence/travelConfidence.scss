@@ -1,0 +1,44 @@
+.confidenceContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  .confidenceTexts {
+    border: 1px solid var(--color-black);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 18px;
+      text-decoration: underline;
+    }
+    p {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 16px;
+    }
+    .texts {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+
+      .textsItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 10px;
+        .textsIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          margin-left: 10px;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}

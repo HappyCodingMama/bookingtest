@@ -1,0 +1,36 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: var(--color-white);
+  background-color: var(--color-bg-variant);
+  align-items: center;
+  padding: 70px 0;
+
+  .footerListsBox {
+    width: 100%;
+    max-width: 1024px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    .footerList {
+      cursor: pointer;
+      .footerListItemCategory {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      .footerListItem {
+        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 200;
+      }
+    }
+  }
+  .footerRight {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 30px;
+  }
+}

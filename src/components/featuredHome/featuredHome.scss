@@ -1,0 +1,78 @@
+.featuredHomeContainer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  margin-bottom: 50px;
+
+  gap: 20px;
+  .featuredHomeCard {
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+
+    .featuredHomeItems {
+      display: flex;
+      width: 100%;
+      max-width: 1024px;
+      .featuredHomeImg {
+        position: relative;
+        img {
+          width: 100%;
+          height: 350px;
+          border-radius: 20px;
+          object-fit: cover;
+          display: block;
+        }
+        .price {
+          display: flex;
+          position: absolute;
+          z-index: 1;
+          bottom: 55px;
+          padding-bottom: 10px;
+          justify-content: center;
+          width: 100%;
+          color: var(--color-white);
+          span {
+            font-size: 27px;
+            font-weight: 600;
+          }
+        }
+        .featuredHomeCardTexts {
+          position: absolute;
+          bottom: 0;
+          background: linear-gradient(rgba(0, 0, 0, 0), black);
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          width: 100%;
+          height: 150px;
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          color: var(--color-white);
+          padding: 16px;
+
+          .featuredHomeCity {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 6px;
+            text-align: center;
+          }
+          .typeRating {
+            display: flex;
+            justify-content: space-between;
+            .featuredHomeType {
+              font-size: 12px;
+            }
+            .featuredHomeRating {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 4px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

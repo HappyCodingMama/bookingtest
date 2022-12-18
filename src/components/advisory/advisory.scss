@@ -1,0 +1,30 @@
+.advisoryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1024px;
+  border-radius: 20px;
+  border: 1px solid var(--color-black);
+  .advisoryIcon {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-right: 20px;
+  }
+  .advisoryTexts {
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+      b {
+        text-decoration: underline;
+        margin-left: 6px;
+      }
+    }
+  }
+}
