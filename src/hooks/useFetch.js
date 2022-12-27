@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const baseUrl = 'https://bookingtestback.onrender.com';
-
-const useFetch = (baseUrl+ url) => {
+const useFetch = (url) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
@@ -12,7 +10,7 @@ const useFetch = (baseUrl+ url) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(baseUrl + url);
+        const res = await axios.get(url);
         setData(res.data);
       } catch (err) {
         setError(err);
@@ -20,12 +18,12 @@ const useFetch = (baseUrl+ url) => {
       setLoading(false);
     };
     fetchData();
-  }, [baseUrl + url]);
+  }, [url]);
 
   const reFetch = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(baseUrl + url);
+      const res = await axios.get(url);
       setData(res.data);
     } catch (err) {
       setError(err);
