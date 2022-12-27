@@ -41,5 +41,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://bookingtestfront.onrender.com/api"
+  "proxy": "https://bookingtestback.onrender.com/api"
 }
